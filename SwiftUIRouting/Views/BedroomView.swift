@@ -33,7 +33,6 @@ struct BedroomView: View {
                 Text("Pop to **Home**")
             }
             .padding(.top, 4)
-            
         }
         .navigationBarBackButtonHidden()
         .padding()

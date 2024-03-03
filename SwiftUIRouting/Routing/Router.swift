@@ -16,6 +16,15 @@ final class Router: ObservableObject {
     
     @Published var navPath = NavigationPath()
     
+    public func getViewForDestination(_ destination: Destination) -> AnyView {
+        switch destination {
+        case .livingroom:
+            return AnyView(LivingroomView())
+        case .bedroom(let owner):
+            return AnyView(BedroomView(ownerName: owner))
+        }
+    }
+    
     func navigate(to destination: Destination) {
         navPath.append(destination)
     }

@@ -13,12 +13,13 @@
 		1FC437232B94F150005A4FBE /* SwiftUIRoutingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC437222B94F150005A4FBE /* SwiftUIRoutingTests.swift */; };
 		1FC4372D2B94F150005A4FBE /* SwiftUIRoutingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4372C2B94F150005A4FBE /* SwiftUIRoutingUITests.swift */; };
 		1FC4372F2B94F150005A4FBE /* SwiftUIRoutingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4372E2B94F150005A4FBE /* SwiftUIRoutingUITestsLaunchTests.swift */; };
-		1FC4373C2B94F187005A4FBE /* RoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4373B2B94F187005A4FBE /* RoomInfo.swift */; };
-		1FC437442B94F4FE005A4FBE /* PaintInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC437432B94F4FE005A4FBE /* PaintInfo.swift */; };
 		1FC437472B94F69E005A4FBE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC437462B94F69E005A4FBE /* Router.swift */; };
 		1FC437492B94F79B005A4FBE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC437482B94F79B005A4FBE /* HomeView.swift */; };
 		1FC4374B2B94F897005A4FBE /* LivingroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4374A2B94F897005A4FBE /* LivingroomView.swift */; };
 		1FC4374D2B94F8E9005A4FBE /* BedroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4374C2B94F8E9005A4FBE /* BedroomView.swift */; };
+		1FC4374F2B94FE5A005A4FBE /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4374E2B94FE5A005A4FBE /* TasksView.swift */; };
+		1FC437512B94FE65005A4FBE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC437502B94FE65005A4FBE /* SettingsView.swift */; };
+		1FC437532B952BED005A4FBE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC437522B952BEC005A4FBE /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +49,13 @@
 		1FC437282B94F150005A4FBE /* SwiftUIRoutingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIRoutingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC4372C2B94F150005A4FBE /* SwiftUIRoutingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRoutingUITests.swift; sourceTree = "<group>"; };
 		1FC4372E2B94F150005A4FBE /* SwiftUIRoutingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRoutingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1FC4373B2B94F187005A4FBE /* RoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInfo.swift; sourceTree = "<group>"; };
-		1FC437432B94F4FE005A4FBE /* PaintInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintInfo.swift; sourceTree = "<group>"; };
 		1FC437462B94F69E005A4FBE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1FC437482B94F79B005A4FBE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1FC4374A2B94F897005A4FBE /* LivingroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingroomView.swift; sourceTree = "<group>"; };
 		1FC4374C2B94F8E9005A4FBE /* BedroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomView.swift; sourceTree = "<group>"; };
+		1FC4374E2B94FE5A005A4FBE /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		1FC437502B94FE65005A4FBE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1FC437522B952BEC005A4FBE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,6 @@
 				1FC437112B94F14E005A4FBE /* SwiftUIRoutingApp.swift */,
 				1FC437452B94F68F005A4FBE /* Routing */,
 				1FC437402B94F229005A4FBE /* Views */,
-				1FC4373D2B94F18E005A4FBE /* Models */,
 				1FC437152B94F150005A4FBE /* Assets.xcassets */,
 				1FC437172B94F150005A4FBE /* Preview Content */,
 			);
@@ -139,21 +140,15 @@
 			path = SwiftUIRoutingUITests;
 			sourceTree = "<group>";
 		};
-		1FC4373D2B94F18E005A4FBE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1FC4373B2B94F187005A4FBE /* RoomInfo.swift */,
-				1FC437432B94F4FE005A4FBE /* PaintInfo.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		1FC437402B94F229005A4FBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				1FC437482B94F79B005A4FBE /* HomeView.swift */,
 				1FC4374A2B94F897005A4FBE /* LivingroomView.swift */,
 				1FC4374C2B94F8E9005A4FBE /* BedroomView.swift */,
+				1FC4374E2B94FE5A005A4FBE /* TasksView.swift */,
+				1FC437502B94FE65005A4FBE /* SettingsView.swift */,
+				1FC437522B952BEC005A4FBE /* MainTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,9 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC4374B2B94F897005A4FBE /* LivingroomView.swift in Sources */,
-				1FC4373C2B94F187005A4FBE /* RoomInfo.swift in Sources */,
-				1FC437442B94F4FE005A4FBE /* PaintInfo.swift in Sources */,
+				1FC437532B952BED005A4FBE /* MainTabView.swift in Sources */,
+				1FC437512B94FE65005A4FBE /* SettingsView.swift in Sources */,
 				1FC437472B94F69E005A4FBE /* Router.swift in Sources */,
+				1FC4374F2B94FE5A005A4FBE /* TasksView.swift in Sources */,
 				1FC437122B94F14E005A4FBE /* SwiftUIRoutingApp.swift in Sources */,
 				1FC437492B94F79B005A4FBE /* HomeView.swift in Sources */,
 				1FC4374D2B94F8E9005A4FBE /* BedroomView.swift in Sources */,

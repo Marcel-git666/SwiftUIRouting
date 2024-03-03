@@ -24,10 +24,13 @@ struct HomeView: View {
             .padding(.top, 12)
             
         }
-        .padding()
+        .navigationDestination(for: Router.Destination.self) { destination in
+            router.getViewForDestination(destination)
+        }
     }
 }
 
 #Preview {
     HomeView()
+    
 }

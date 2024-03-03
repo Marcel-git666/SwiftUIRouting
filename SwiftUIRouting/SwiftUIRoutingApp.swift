@@ -9,20 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUIRoutingApp: App {
-    @ObservedObject var router = Router()
+    @StateObject var router = Router()
     
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.navPath) {
-                HomeView()
-                    .navigationDestination(for: Router.Destination.self) { destination in
-                        switch destination {
-                        case .livingroom:
-                            LivingroomView()
-                        case .bedroom(let owner):
-                            BedroomView(ownerName: owner)
-                        }
-                    }
+                MainTabView()
             }
             .environmentObject(router)
         }
