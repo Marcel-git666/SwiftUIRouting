@@ -13,10 +13,8 @@ struct SwiftUIRoutingApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack(path: $router.navPath) {
-                MainTabView()
-            }
-            .environmentObject(router)
+            MainTabView()
+                .environmentObject(router)
         }
     }
 }

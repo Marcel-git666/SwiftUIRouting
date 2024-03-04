@@ -24,9 +24,6 @@ struct HomeView: View {
             .padding(.top, 12)
             
         }
-        .navigationDestination(for: Router.Destination.self) { destination in
-            router.getViewForDestination(destination)
-        }
     }
 }
 

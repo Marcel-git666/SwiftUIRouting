@@ -12,10 +12,6 @@ struct TasksView: View {
     var body: some View {
         VStack {
             Text("Task View")
-            Button("**Go to John's Bedroom**") {
-                router.navigate(to: .bedroom(owner: "John"))
-            }
-            .padding(.top, 12)
         }
     }
 }
